@@ -1,0 +1,112 @@
+@import url("reset.css");
+@import url("headnav.css");
+@import url("img.css");
+@import url("homecontent.css");
+@import url("card.css");
+@import url("projectcontent.css");
+@import url("aboutcontent.css");
+@import url("skills.css");
+@import url("contactcontent.css");
+@import url("form.css");
+@import url("footer.css");
+
+:root {
+  /*size*/
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 1.5rem;
+    /*font-size*/
+  --font-size-small: 0.875rem;  
+  --font-size-base: 1rem;       
+  --font-size-large: 1.25rem; 
+    /*fonts*/
+  --font-fm-regular: "fm-regular";
+  --font-fm-medium: "fm-medium";
+  --font-fs-regular: "fs-regular";
+  --font-fs-italic: "fs-italic";
+  --font-fs-medium: "fs-medium";
+    /*colors*/
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-primary: #73c2df;   
+    --color-secondary: #ff69b4; 
+    --color-accent: #32cd32;   
+    --color-muted: #444;  
+    --color-highlight: #f45c2c;
+    --color-shadow: #f45c2c33;   
+  }
+  
+  
+  @font-face {
+    font-family: "fm-regular";
+  src: url("../fonts/firamono-regular-webfont.woff") format("woff"),
+    url("../fonts/firamono-regular-webfont.woff2") format("woff2");
+    font-weight: 400;
+  font-style: 400;
+}
+
+@font-face {
+  font-family: "fm-medium";
+  src: url("../fonts/firamono-medium-webfont.woff") format("woff"),
+  url("../fonts/firamono-medium-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: 400;
+}
+
+@font-face {
+  font-family: "fs-regular";
+  src: url("../fonts/firasans-regular-webfont.woff2") format("woff2"),
+  url("../fonts/firasans-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: 400;
+}
+
+@font-face {
+  font-family: "fs-italic";
+  src: url("../fonts/firasans-italic-webfont.woff2") format("woff2"),
+  url("../fonts/firasans-italic-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "fs-medium";
+  src: url("../fonts/firasans-medium-webfont.woff") format("woff"),
+    url("../fonts/firasans-medium-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: 400;
+}
+
+.darkmode {
+--base: #000001;
+--text-color: hsl(0, 0%, 100%);
+--sun: hsla(68, 100%, 82%, 1);
+
+}
+
+
+
+
+body {
+  background-color: var(--base);
+  color: var(--text-color);
+  transition: background-color 0.5s, color 0.5s;
+  overflow-x: hidden;
+  background-color: #73c2df;
+
+}
+
+a {
+  font-family: "fs-regular";
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.darkmode a {
+ color: var(--text-color);
+}
+ul {
+  list-style: none;
+}
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles/main.css">
+    <title>Portofolio | Home</title>
+</head>
+<body>
+    <header class="navigation" role="banner">
+        <a class="navigation__l-link" href="home.html">
+           <span>Y</span>SN 
+        </a>
+        <div class="theme-container">
+            <button class="theme-button" aria-label="Toggle dark/light mode">
+                <svg id="mode-switcher-sun" class="mode-switcher mode-switcher--sun" width="31" height="31" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4583 9.49967C13.4583 11.6862 11.6862 13.4583 9.49967 13.4583C7.31355 13.4583 5.54163 11.6862 5.54163 9.49967C5.54163 7.31355 7.3137 5.54163 9.49967 5.54163C11.6862 5.54163 13.4583 7.3137 13.4583 9.49967"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3 1.74415C11.3 2.70751 10.5192 3.48904 9.55506 3.48904C8.5917 3.48904 7.81091 2.70751 7.81091 1.74415C7.81091 0.780788 8.5917 0 9.55506 0C10.5192 0 11.3 0.780788 11.3 1.74415"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.28875 2.74322C5.96933 3.42455 5.96933 4.52893 5.28875 5.21019C4.60743 5.89152 3.50305 5.89152 2.82178 5.21019C2.14046 4.52887 2.14046 3.42449 2.82178 2.74322C3.50311 2.06264 4.60748 2.06264 5.28875 2.74322Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.74415 7.7002C2.70751 7.7002 3.48904 8.48098 3.48904 9.44508C3.48904 10.4084 2.70751 11.1892 1.74415 11.1892C0.780788 11.1892 0 10.4084 0 9.44508C0 8.48098 0.780788 7.7002 1.74415 7.7002"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.74322 13.7112C3.42455 13.0307 4.52893 13.0307 5.21019 13.7112C5.89151 14.3926 5.89151 15.4969 5.21019 16.1782C4.52887 16.8595 3.42449 16.8595 2.74322 16.1782C2.06264 15.4969 2.06264 14.3925 2.74322 13.7112Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1892 17.2559C11.1892 18.2192 10.4084 19 9.44508 19C8.48098 19 7.7002 18.2192 7.7002 17.2559C7.7002 16.2925 8.48098 15.511 9.44508 15.511C10.4084 15.511 11.1892 16.2925 11.1892 17.2559"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7111 16.2568C13.0305 15.5754 13.0305 14.4711 13.7111 13.7898C14.3924 13.1085 15.4968 13.1085 16.1781 13.7898C16.8594 14.4711 16.8594 15.5755 16.1781 16.2568C15.4968 16.9374 14.3924 16.9374 13.7111 16.2568Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2559 11.2999C16.2925 11.2999 15.511 10.5192 15.511 9.55506C15.511 8.5917 16.2925 7.81091 17.2559 7.81091C18.2192 7.81091 19 8.5917 19 9.55506C19 10.5192 18.2192 11.2999 17.2559 11.2999Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2568 5.28887C15.5754 5.96945 14.4711 5.96945 13.7898 5.28887C13.1085 4.60755 13.1085 3.50317 13.7898 2.82191C14.4711 2.14058 15.5755 2.14058 16.2568 2.82191C16.9373 3.50323 16.9373 4.60761 16.2568 5.28887Z"/>
+                </svg>
+                
+
+                <svg id="mode-switcher-moon" class="mode-switcher navbar__mode-switcher--moon" width="31" height="31" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"> 
+                <path d="M10.553 19.2499C13.7848 19.2499 16.7487 17.4781 18.2923 14.6247C18.4201 14.3903 18.3978 14.1037 18.2395 13.8917C18.0812 13.6796 17.8083 13.5777 17.5535 13.6357C17.0259 13.7509 16.4941 13.808 15.9706 13.808C11.8639 13.808 8.52147 10.4509 8.52147 6.32425C8.52147 5.07847 8.83395 3.84584 9.4226 2.75507C9.5504 2.52066 9.52814 2.23408 9.36984 2.02203C9.21154 1.80998 8.93863 1.70809 8.68388 1.76609C4.66543 2.63995 1.75 6.27124 1.75 10.4062C1.75 15.2832 5.69838 19.25 10.5529 19.25L10.553 19.2499Z"/>
+                </svg>
+            </button>
+            <button id="hamburger-icon" class="hamburger-icon" aria-label="Open menu" aria-controls="nav-list">
+                <svg width="60" height="60" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.5 12.5C9.5 11.6703 10.1703 11 11 11H29C29.8297 11 30.5 11.6703 30.5 12.5C30.5 13.3297 29.8297 14 29 14H11C10.1703 14 9.5 13.3297 9.5 12.5ZM9.5 20C9.5 19.1703 10.1703 18.5 11 18.5H29C29.8297 18.5 30.5 19.1703 30.5 20C30.5 20.8297 29.8297 21.5 29 21.5H11C10.1703 21.5 9.5 20.8297 9.5 20ZM30.5 27.5C30.5 28.3297 29.8297 29 29 29H11C10.1703 29 9.5 28.3297 9.5 27.5C9.5 26.6703 10.1703 26 11 26H29C29.8297 26 30.5 26.6703 30.5 27.5Z"/>
+                </svg>
+            </button>
+            <button id="close-icon" class="close-icon" style="display: none" aria-label="Close menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="54px" viewBox="0 -960 960 960" width="54px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </button>
+        </div>
+        <nav id="navigation" class="navigation__links" role="navigation" aria-label="Main navigation">
+            
+            <ul id="nav-list" class="navigation__items">
+                <li >
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="projects.html" aria-current="page">Projects</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-box" role="main">    
+        <article class="header">
+            <h1 class="header__title">Projects</h1>
+            <p class="header__text">
+                De afgelopen maanden heb ik met veel enthousiasme gewerkt aan diverse opdrachten en projecten, zowel individueel als in teamverband. Elk project bood de kans om nieuwe tools en technieken te ontdekken en mijn vaardigheden in front-end ontwikkeling, design en het werken met API’s verder te ontwikkelen. Deze pagina geeft een overzicht van mijn werk en groei als ontwikkelaar. Van het namaken van bestaande websites tot het bouwen van interactieve toepassingen – elk project vertelt zijn eigen verhaal.
+            </p>
+
+        </article>
+
+        <section class="card-box" aria-label="Project">
+            <article class="card">
+                <video class="card__visual" autoplay loop muted src="static/videos/p-best-of-24.mp4"></video>
+                <section class="card__content">
+                    <h2 class="card__title">Best of 2024</h2>
+                    <span class="card__date">2025</span>
+                    <p class="card__text">
+                        Best of 2024 is een nagebouwde website die ik heb ontwikkeld als oefenopdracht. Naast het namaken van de layout en styling, heb ik ook gebruikgemaakt van een API om dynamisch content op te halen via JavaScript 
+                    </p>
+                </section>
+            </article>
+            
+            <article class="card">
+                <video class="card__visual"  autoplay loop muted src="static/videos/p-portfolio.mp4"></video>
+                <section class="card__content">
+                    <h2>Front-end Portfolio </h2>
+                    <span>2025</span>
+                    <p>
+                        Dit front-end portfolio is een moderne, responsive website die ik zelf heb opgebouwd met HTML en CSS. Het bevat een theme switcher (licht/donker modus) en is geoptimaliseerd met Webpack voor efficiënte bundling en performance. Alles is geschreven in schone, schaalbare CSS-structuur met aandacht voor design én toegankelijkheid.
+                    </p>
+                </section>
+            </article>
+            
+            <article class="card">
+                <video class="card__visual"  autoplay loop muted src="static/videos/p-gamescon.mp4"></video>
+                <section class="card__content">
+                    <h2>Gamescon</h2>
+                    <span>2025</span>
+                    <p>
+                        De Gamescom-website is een interactieve webpagina die ik volledig gebouwd heb in pure JavaScript voor het vak PGM-1. De site bevat onder andere een aftellende klok naar het evenement, en is opgezet zonder frameworks of externe libraries – puur JS, HTML en CSS.               
+                    </p>
+                </section>
+            </article>
+            
+            
+            
+            
+            <article class="card">
+                <video class="card__visual" autoplay loop muted src="static/videos/p-stam.mp4"></video>
+                <section class="card__content">
+                    <h2>STAM </h2>
+                    <span>2025</span>
+                    <p>
+                        Deze website voor het STAM-museum is opgebouwd met HTML en CSS en focust op een duidelijke structuur en visueel aantrekkelijke layout. Het project toont hoe je met eenvoudige technieken een informatieve en gebruiksvriendelijke website kan opbouwen.                 
+                    </p>
+                </section>
+            </article>
+            
+            
+            <article class="card">
+                <video class="card__visual"  autoplay loop muted src="static/videos/p-funky-portfolio.mp4"></video>
+                <section class="card__content">
+                    <h2>Funky Portfolio</h2>
+                    <span>2025</span>
+                    <p>
+                        Funky Portfolio is een creatieve website die ik heb ontwikkeld voor het vak WEB-2. De site is volledig opgebouwd met HTML en CSS, met een sterke focus op animatie en visuele dynamiek. Alles draait om speelsheid, beweging en een opvallende gebruikerservaring.                   
+                    </p>
+                </section>
+            </article>      
+        </section>
+    </main>
+    
+    <footer class="footer" role="contentinfo">
+        <nav class="socials" aria-label="Social media">
+            <ul class="socials__lists">
+                <li>
+                    <a class="socials__list" target="_blank" href="https://github.com/Clash-yabi">Github</a>
+                </li>
+                <li >
+                    <a class="socials__list" target="_blank" href="https://www.linkedin.com/in/solomon-yabetse-454b98357/">Linkedin</a>
+                </li>
+            </ul>
+        </nav>
+        <p class="footer__text">
+            &copy; 2025 Arteveldehogeschool
+        </p>
+    </footer>
+    <script src="dist/bundle.js"></script>
+
+
+</body>
+</html>

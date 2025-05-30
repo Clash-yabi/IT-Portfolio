@@ -1,0 +1,141 @@
+.navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333333;
+    padding: 1rem 1.5rem;
+}
+
+.navigation__l-link {
+    position: relative;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: black;
+    font-family: var(--font-fs-medium);
+}
+
+.navigation__l-link span {
+    color: var(--color-highlight);
+}
+
+.navigation__items {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.navigation__items a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+.navigation__items a::after {
+    content: "";  
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 100%;
+    height: 2px;   
+    background: linear-gradient(320deg, #feac5e, #c779d0, #4bc0c8);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+}
+
+.hamburger-icon,.close-icon {
+    display: none;
+}
+.theme-container {
+    margin-left: auto;
+    padding: 0 1rem 0 0;
+
+}
+.theme-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.mode-switcher {
+  display: none;
+}
+
+.mode-switcher.active {
+  display: inline-block;
+}
+
+.mode-switcher--sun {
+  display: none;
+}
+
+.darkmode .mode-switcher--moon {
+  display: none;
+}
+
+.darkmode .mode-switcher--sun {
+  display: block;
+}
+.darkmode .hamburger-icon {
+    fill: var(--text-color);
+}
+
+.mode-switcher--sun path {
+  fill: var(--sun);
+}
+
+@media (max-width: 50rem) {
+    .theme-container {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+
+}
+    .hamburger-icon {
+        display: block;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .close-icon {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    fill: var(--color-white);
+    }
+
+    .navigation__items {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100vw;
+    background-color:  var(--color-muted);
+    padding: 4rem 2rem;
+    gap: 5rem;
+    z-index: 1000;
+    }
+
+    .navigation__items--active {
+    display: flex;  
+    }
+
+    .navigation__items a {
+    color: white;
+    font-size: 5rem;
+    }
+} 

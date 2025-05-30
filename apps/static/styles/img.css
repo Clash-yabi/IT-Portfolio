@@ -1,0 +1,72 @@
+/*hero-page*/
+.visual img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: 10% 65%;
+  border-radius: 50%;
+}
+
+.visual {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visual__image {
+  display: block;
+  max-width: 70%;
+  height: auto;
+}
+
+.visual__overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 15%;
+  right: 0;
+  background: linear-gradient(320deg, #feac5e, #c779d0, #4bc0c8);
+  opacity: 0.7;
+  overflow: hidden;
+  width: 70%;
+  height: 0;
+  transition: 0.5s ease;
+  border-radius: 50%;
+}
+
+.visual__text {
+  color: black;
+  font-size: 20px;
+  font-family: "fs-medium";
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.visual:hover .visual__overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+@media (mix-width: 768px) {
+}
+/*about-page*/
+
+.image-container {
+  flex: 1;
+  max-width: 300px;
+  aspect-ratio: 9 / 16;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}

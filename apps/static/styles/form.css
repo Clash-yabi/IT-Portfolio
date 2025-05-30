@@ -1,0 +1,64 @@
+.contact__form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    font-family: "fs-regular";
+}
+
+.form__label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+input,
+textarea {
+  padding: 0.75rem;
+  margin-top: 0.4rem;
+  border: 1px solid var(--color-muted);
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+label:has(input:focus),
+label:has(textarea:focus) {
+  color: var(--color-highlight);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-highlight);
+  box-shadow: 0 0 0 2px var(--color-shadow);
+}
+
+label:has(input:not(:placeholder-shown)),
+label:has(textarea:not(:placeholder-shown)) {
+  color: var(--color-accent); 
+}
+
+.submitbutton {
+  background-color:  var(--color-highlight);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    background-color:  var(--color-muted);
+    color: var(--color-highlight);
+    transform: scale(1.1);
+  }
+}
+
